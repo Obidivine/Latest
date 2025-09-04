@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SwiftShip - Track Package</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚚 SwiftShip</h1>
+    <p>Track your package in real-time</p>
+  </header>
+
+  <main>
+    <div class="tracker-box">
+      <h2>Enter Tracking Number</h2>
+      <input type="text" id="trackingInput" placeholder="e.g. PKG6647BV7786544GGV00843">
+      <button onclick="trackPackage()">Track</button>
+      <p id="errorMsg"></p>
+      <div id="loading" class="loader hidden"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 SwiftShip | <a href="#">About Us</a> | <a href="#">Contact</a> | <a href="#">Support</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

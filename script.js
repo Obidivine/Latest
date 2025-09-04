@@ -14,3 +14,19 @@ function trackPackage() {
     errorMsg.textContent = "Can't find item";
   }
 }
+// Animate progress bar steps on package.html
+document.addEventListener("DOMContentLoaded", () => {
+  const steps = document.querySelectorAll("#progressBar .step");
+  if (steps.length > 0) {
+    let index = 0;
+    const interval = setInterval(() => {
+      if (index > 0) steps[index - 1].classList.remove("active");
+      steps[index].classList.add("completed");
+      steps[index].classList.add("active");
+      index++;
+      if (index === steps.length - 1) {
+        clearInterval(interval); // stop before Delivered
+      }
+    }, 1500); // 1.5s per step
+  }
+});

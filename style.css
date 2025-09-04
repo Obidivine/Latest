@@ -131,3 +131,21 @@ button:hover, .btn:hover {
   color: #007bff;
   font-weight: bold;
 }
+
+.package-card {
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.package-card h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-row {
+  padding: 10px;
+  margin: 5px 0;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}

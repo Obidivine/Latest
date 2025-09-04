@@ -111,3 +111,23 @@ button:hover, .btn:hover {
   border-color: #007bff;
   font-weight: bold;
 }
+
+.step {
+  flex: 1;
+  padding: 10px;
+  border-bottom: 4px solid #ccc;
+  position: relative;
+  color: #999;
+  transition: all 0.5s ease;
+}
+
+.step.completed {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.step.active {
+  border-color: #007bff;
+  color: #007bff;
+  font-weight: bold;
+}
